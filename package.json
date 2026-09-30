@@ -1,0 +1,40 @@
+{
+  "name": "staypaw_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "node src/db/migrate.js",
+    "start": "nodemon src/app.js",
+  "dev": "nodemon src/app.js",
+    "test:auth": "node src/tests/test_auth.js",
+    "test:social": "node src/tests/test_social_auth.js",
+    "test:phone": "node src/tests/test_phone_auth.js",
+    "test:shelters": "node src/tests/test_shelters.js",
+    "test:bookings": "node src/tests/test_bookings.js",
+    "test:messages": "node src/tests/test_messages.js",
+    "test:pets": "node src/tests/test_pets.js",
+    "test:activities": "node src/tests/test_activities.js",
+    "test:contract": "node src/tests/test_api_contract.js",
+    "test:all": "node src/tests/test_auth.js && node src/tests/test_social_auth.js && node src/tests/test_phone_auth.js && node src/tests/test_shelters.js && node src/tests/test_bookings.js && node src/tests/test_messages.js && node src/tests/test_pets.js && node src/tests/test_activities.js && node src/tests/test_api_contract.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "google-auth-library": "^11.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "jwks-rsa": "^4.1.0",
+    "mysql2": "^3.24.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
